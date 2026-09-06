@@ -1,0 +1,731 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saurabh Wankhade | Python Developer</title>
+
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo-area">
+            <div class="logo">SW</div>
+            <div class="logo-name">Saurabh Wankhade</div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+            <button class="theme-btn" id="themeBtn">
+                <i class="fa-regular fa-moon"></i>
+            </button>
+            <a href="{% static 'portfolio/resume/Saurabh_Wankhade_Resume.pdf' %}" class="resume-btn"
+                download="Saurabh_Wankhade_Resume.pdf">
+                <i class="fa-solid fa-download"></i>
+                Download Resume
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HOME / HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="hello-badge">
+                👋 Hello, I'm
+            </div>
+
+            <h1>
+                Saurabh
+                <span>Wankhade</span>
+            </h1>
+
+            <h2>
+                Python Developer <span>|</span> Backend Developer
+            </h2>
+
+            <p class="hero-description">
+                I build reliable, scalable and secure web applications using
+                Python, Django and modern technologies. Passionate about clean
+                code, problem solving and building efficient backend systems.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="primary-btn">
+                    View My Work
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#contact" class="secondary-btn">
+                    Contact Me
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+
+            </div>
+
+            <div class="social-links">
+
+                <!-- GitHub -->
+                <a href="https://github.com/WankhadeSaurabh" title="GitHub" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/saurabh-wankhade-a45224396/?originalSubdomain=in" title="LinkedIn" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <!-- HackerRank -->
+                <a href="https://www.hackerrank.com/profile/wankhadesaurabh1" title="HackerRank" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-hackerrank"></i>
+                </a>
+
+                <!-- Naukri -->
+                <a href="https://www.naukri.com/mnjuser/homepage" title="Naukri" target="_blank"
+                    rel="noopener noreferrer">
+                    <span class="naukri-icon">N</span>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:saurabhinnfo03@gmail.com" title="Email">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROFILE PHOTO -->
+
+        <div class="hero-visual">
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="profile-circle">
+
+                <img src="{% static 'portfolio/images/profile.png' %}" alt="Saurabh Wankhade">
+
+            </div>
+
+
+            <!-- Floating Python -->
+
+            <div class="floating-icon python-icon">
+                <i class="fa-brands fa-python"></i>
+            </div>
+
+            <!-- Django -->
+
+            <div class="floating-icon django-icon">
+                <b>dj</b>
+            </div>
+
+            <!-- Database -->
+
+            <div class="floating-icon database-icon">
+                <i class="fa-solid fa-database"></i>
+            </div>
+
+            <!-- Code -->
+
+            <div class="floating-icon code-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about-section">
+
+        <div class="about-content">
+
+            <div class="section-icon">
+                <i class="fa-regular fa-user"></i>
+            </div>
+
+            <div>
+                <h2>ABOUT ME</h2>
+
+                <p>
+                    Python Developer with a B.E. in Information Technology.
+                    I have hands-on experience in building web applications
+                    using Django, Django REST Framework, MySQL, SQLite and
+                    other modern technologies. I enjoy building backend
+                    systems and working with databases.
+                </p>
+
+                <div class="signature">
+                    Saurabh Wankhade
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="stats">
+
+            <div class="stat-box">
+
+                <div class="stat-icon blue">
+                    <i class="fa-regular fa-calendar"></i>
+                </div>
+
+                <h3>2+</h3>
+
+                <p>Years of<br>Learning</p>
+
+            </div>
+
+
+            <div class="stat-box">
+
+                <div class="stat-icon purple">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <h3>8+</h3>
+
+                <p>Projects<br>Completed</p>
+
+            </div>
+
+
+            <div class="stat-box">
+
+                <div class="stat-icon pink">
+                    <i class="fa-solid fa-hourglass-half"></i>
+                </div>
+
+                <h3>300+</h3>
+
+                <p>Problems<br>Solved</p>
+
+            </div>
+
+
+            <div class="stat-box">
+
+                <div class="stat-icon target">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+
+                <h3>100%</h3>
+
+                <p>Dedication</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="heading-icon">
+                    &lt;/&gt;
+                </span>
+
+                <h2>SKILLS & TECHNOLOGIES</h2>
+            </div>
+
+            <a href="#" class="view-btn">
+                View All Skills
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <i class="fa-brands fa-python python-color"></i>
+                <span>Python</span>
+            </div>
+
+            <div class="skill-card">
+                <strong class="django-text">dj</strong>
+                <span>Django</span>
+            </div>
+
+            <div class="skill-card">
+                <strong class="drf-text">DRF</strong>
+                <span>Django REST<br>Framework</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-feather flask-color"></i>
+                <span>Flask</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-bolt fastapi-color"></i>
+                <span>FastAPI</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-database mysql-color"></i>
+                <span>MySQL</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-database postgres-color"></i>
+                <span>PostgreSQL</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-database sqlite-color"></i>
+                <span>SQLite</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-html5 html-color"></i>
+                <span>HTML5</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt css-color"></i>
+                <span>CSS3</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-js js-color"></i>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-bootstrap bootstrap-color"></i>
+                <span>Bootstrap</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-git-alt git-color"></i>
+                <span>Git</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-github github-color"></i>
+                <span>GitHub</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-linux linux-color"></i>
+                <span>Linux</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-aws aws-color"></i>
+                <span>AWS Basics</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-paper-plane postman-color"></i>
+                <span>Postman</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-code vscode-color"></i>
+                <span>VS Code</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="section">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="heading-icon">
+                    <i class="fa-regular fa-folder"></i>
+                </span>
+
+                <h2>FEATURED PROJECTS</h2>
+            </div>
+
+            <a href="#" class="view-btn">
+                View All Projects
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+
+            <div class="project-card blue-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+
+                <h3>
+                    Institute Management<br>
+                    & Billing System
+                </h3>
+
+                <p>
+                    Manage students, teachers, courses, fees, billing,
+                    receipts, invoices and reports.
+                </p>
+
+                <div class="tech">
+                    Python • Django • SQLite
+                </div>
+
+                <div class="project-links">
+                    <a href="{% static 'portfolio/videos/institute-demo.mp4' %}" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-solid fa-play"></i>
+                        Demo Video
+                    </a>
+
+                    <a href="https://github.com/WankhadeSaurabh/institute-management-system">
+                        GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Project 2 -->
+
+            <div class="project-card green-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <h3>
+                    KYC Verification<br>
+                    System
+                </h3>
+
+                <p>
+                    KYC verification with user & admin workflows,
+                    document upload, selfie capture and status tracking.
+                </p>
+
+                <div class="tech">
+                    Python • Django • MySQL • JS
+                </div>
+
+                <div class="project-links">
+                    <a href="{% static 'portfolio/videos/kycsecure-demo.mp4' %}" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-solid fa-play"></i>
+                        Demo Video
+                    </a>
+
+
+                    <a href="#">
+                        GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Project 3 -->
+
+            <div class="project-card purple-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+
+                <h3>
+                    Banking Management<br>
+                    System
+                </h3>
+
+                <p>
+                    Manage accounts & transactions with balance updates,
+                    validation and reports.
+                </p>
+
+                <div class="tech">
+                    Python • Django • MySQL
+                </div>
+
+                <div class="project-links">
+
+                    <a href="{% static 'portfolio/videos/banking-demo.mp4' %}" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-solid fa-play"></i>
+                        Demo Video
+                    </a>
+
+                    <a href="https://github.com/WankhadeSaurabh/Banking-Management-System" target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Project 4 -->
+
+            <div class="project-card orange-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <h3>
+                    Employee Management<br>
+                    System
+                </h3>
+
+                <p>
+                    Manage students, staff, classrooms, subjects
+                    and academic activities.
+                </p>
+
+                <div class="tech">
+                    Python • Django • SQLite
+                </div>
+
+                <div class="project-links">
+                    <a href="#">
+                        Live Demo ↗
+                    </a>
+
+                    <a href="https://github.com/WankhadeSaurabh/Employee-Management-System">
+                        GitHub
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="section-bottom">
+
+        <div class="education-box">
+
+            <div class="section-title">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h2>EDUCATION</h2>
+            </div>
+
+            <div class="education-line">
+
+                <div class="edu-point">
+                    <span></span>
+                    <small>2021 - 2025</small>
+                </div>
+
+                <div class="edu-point">
+                    <span></span>
+                    <small>2020 - 2021</small>
+                </div>
+
+                <div class="edu-point">
+                    <span></span>
+                    <small>2018 - 2019</small>
+                </div>
+
+            </div>
+
+
+            <div class="education-cards">
+
+                <div class="education-card">
+
+                    <h3>B.E. Information Technology</h3>
+
+                    <p>
+                        Sant Gadge Baba Amravati University
+                    </p>
+
+                    <span>CGPA: 7.93</span>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <h3>HSC (12th)</h3>
+
+                    <p>
+                        Sant Gadge Baba Amravati University
+                    </p>
+
+                    <span>Percentage: 91.17%</span>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <h3>SSC (10th)</h3>
+
+                    <p>
+                        Sant Gadge Baba Amravati University
+                    </p>
+
+                    <span>Percentage: 73.80%</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div id="contact" class="contact-box">
+
+            <div class="section-title">
+                <i class="fa-solid fa-paper-plane"></i>
+                <h2>CONNECT WITH ME</h2>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-regular fa-envelope"></i>
+                <span>saurabhinfo03@gmail.com</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 7038404116</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Maharashtra, India</span>
+            </div>
+
+
+            <div class="contact-social">
+
+                <a href="https://github.com/WankhadeSaurabh">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/saurabh-wankhade-a45224396/?originalSubdomain=in">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="mailto:saurabhinfo03@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section id="experience" class="experience-section">
+
+        <div class="section-title">
+            <i class="fa-solid fa-briefcase"></i>
+            <h2>EXPERIENCE</h2>
+        </div>
+
+        <div class="experience-card">
+
+            <h3>Python / Django Developer</h3>
+
+            <span>Fresher • Project Experience</span>
+
+            <p>
+                Developed multiple backend-focused web applications using
+                Python, Django, Django REST Framework, MySQL and SQLite.
+                Worked on authentication, CRUD operations, database
+                management, REST APIs and responsive frontend integration.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="quote">
+            <span>“</span>
+            Code is like humor. When you have to explain it,
+            it's bad.
+            <small>– Cory House</small>
+        </div>
+
+        <div class="copyright">
+            © 2026 Saurabh Wankhade.<br>
+            All rights reserved.
+        </div>
+
+        <a href="#home" class="top-btn">
+            ↑
+        </a>
+
+    </footer>
+
+
+    <script src="{% static 'portfolio/js/script.js' %}"></script>
+
+</body>
+
+</html>

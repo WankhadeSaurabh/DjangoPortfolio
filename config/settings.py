@@ -143,11 +143,13 @@ STATICFILES_STORAGE = (
 
 
 # Security for production
-
-CSRF_TRUSTED_ORIGINS = os.getenv(
-    "CSRF_TRUSTED_ORIGINS",
-    ""
-).split(",")
-
+CSRF_TRUSTED_ORIGINS = [
+    origin.strip()
+    for origin in os.getenv(
+        "CSRF_TRUSTED_ORIGINS",
+        ""
+    ).split(",")
+    if origin.strip()
+]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

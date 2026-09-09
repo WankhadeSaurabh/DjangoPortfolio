@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: djangoportfolio
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn config.wsgi:application

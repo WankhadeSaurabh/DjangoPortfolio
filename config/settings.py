@@ -17,7 +17,7 @@ DEBUG = os.getenv("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = os.getenv(
     "ALLOWED_HOSTS",
-    "127.0.0.1,localhost"
+    "127.0.0.1,localhost,djangoportfolio-production-1bcc.up.railway.app"
 ).split(",")
 
 
